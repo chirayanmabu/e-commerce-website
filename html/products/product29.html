@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="21039918 Rayan Dongol">
+	<meta name="keywords" content="HTML">
+	<link rel="stylesheet" type="text/css" href="../../css/c.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/c.css">
+	<title>Computing desc</title>
+	<script src="../../js/javascr.js"></script>
+	<style type="text/css">
+		button
+		{
+			width: 140px;
+			height: 50px;
+			border: 2px solid;
+			padding: 5px;
+		}
+
+		.but
+		{
+			background-color: #ffc875;
+			border-radius: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		button:hover
+		{
+			background-color: #ffb13d;
+			transition: 0.3s;
+		}
+
+		.buy_row
+		{
+			display: flex;
+			justify-content: center;
+		}
+
+		.buy_col
+		{
+			display: flex;
+		}
+
+		.buy_img
+		{
+			flex: 1;
+			width: 400px;
+			height: 400px;
+		}
+
+		.buy_img img
+		{
+			width: 100%;
+			height: 100%;
+		}
+
+		.buy_desc
+		{
+			flex: 2;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a class="logo" href="../../main.html"><img src="../../images/E-commerce Webpage-logos_transparent.png" alt="logo" width="220px"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../../main.html">Home</a></li>
+				<li><a href="../../html/Product.html">Products</a></li>
+				<li><a href="../../html/Blog.html">Blog</a></li>
+				<li><a href="../../html/Research.html">Research</a></li>
+				<li><a href="../../html/Contact.html">Contact Us</a></li>
+				<li><a href="#">Cart (<span id="update_cart">0</span>)</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="category_title">
+			<h1>Fantech Max Pro</h1>
+		</div>
+		<div class="buy_row">
+			<div class="buy_col">
+				<div class="buy_img">
+					<img src="../../images/fantech max pro.jpeg">
+				</div>
+			</div>
+			<div>
+				<div class="buy_desc">
+					<h2>Rs 20000</h2><br>
+					<ul style="display: flex; flex-direction: column; width: 400px; border-top: 2px solid black; border-bottom: 2px solid black;">
+						<h3>Key features</h3><br>
+						<li>Display Size: 32 Inches</li>
+						<li>Max Screen Resolution: 2560 x 1440 Pixels</li>
+						<li>Number of USB 2.0 Ports: 2</li>
+						<li>Number of USB 3.0 Ports: 3</li>
+						<li>Volage: 110V</li>
+						<li>Item Weight: 15.21 pounds</li>
+					</ul><br>
+					<button class="but" id="cart" name="cart" onclick="addToCart()">
+						<img src="../../images/shopping-cart.png" width="15px">
+						&nbsp Add to Cart
+					</button>&nbsp
+					<button class="but" id="wish" name="wish" onclick="addToWish()">
+						<img src="../../images/heart.png" width="15px">
+						&nbspAdd to Wishlist
+					</button>
+				</div>
+			</div>
+		</div><br>
+		<h2 class="category_title_relatedProd">Related Products</h2>
+		<div class="products_row">
+			<div class="products_col" style="border: none;">
+				<div class="products_img">
+					<a href="product26.html"><img src="../../images/nzxt mid tower atx case.jpeg"></a>
+				</div>
+				<div>
+					<a href="../products/product26.html">
+					<p align="center">NZXT Mid Tower ATX Case</p></a><br>
+					<div class="products_text">
+						<a href="../products/product26.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="products_col" style="border: none;">
+				<div class="products_img">
+					<a href="product23.html"><img src="../../images/rog strix z690-A.webp"></a>
+				</div>
+				<div>
+					<a href="../products/product23.html">
+					<p align="center">ASUS ROG Strix Z690-A</p></a><br>
+					<div class="products_text">
+						<a href="../products/product23.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="products_col" style="border: none;">
+				<div class="products_img">
+					<a href="product27.html"><img src="../../images/fantech x17.jpeg"></a>
+				</div>
+				<div>
+					<a href="../products/product27.html">
+					<p align="center">Fantech x17 Mouse</p></a><br>
+					<div class="products_text">
+						<a href="../products/product27.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><br>
+	<footer>
+			<div class="foot">
+				<div class="footone">
+					<table>
+						<tr>
+							<h3>Shop</h3>
+						</tr>
+						<tr>
+							<td><a href="../category/phones.html">Phones</a></td>
+						</tr>
+						<tr>
+							<td><a href="../category/laptops.html">Laptops</a></td>
+						</tr>
+						<tr>
+							<td><a href="../category/headphones.html">Headphones</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/computing.html">Computing</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/tv.html">TV</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/homeappliances.html">Home Appliances</td></a>
+						</tr>
+					</table>
+				</div>
+				<div class="foottwo">
+					<table>
+						<tr>
+							<h3>Support</h3>
+						</tr>
+						<tr>
+							<td><a href="../Contact.html">Contact Us</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Blog.html">Blog</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Research.html">Research</td></a>
+						</tr>
+					</table>
+				</div>
+				<div class="footthree">
+					<h3>Follow us</h3>
+					<a href="https://www.instagram.com/instagram/"><img src="../../images/instagram.png" width="30px"></a>&nbsp
+					<a href="https://www.facebook.com/"><img src="../../images/facebook.png" width="30px"></a>&nbsp
+					<a href="https://twitter.com/Twitter"><img src="../../images/twitter.png" width="30px"></a>&nbsp&nbsp
+					<a href="https://www.tiktok.com/@tiktok"><img src="../../images/tiktok.png" width="30px"></a>
+				</div>
+			</div>
+			<div style="padding: 10px; font-size: 10px;">
+				&copy; Rayan Dongol 21039918 ALL RIGHTS RESERVED
+			</div>
+	</footer>
+</body>
+</html>

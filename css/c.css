@@ -1,0 +1,262 @@
+/*Style for every page*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/*Style for the links*/
+a
+{
+	color: #000;
+}
+
+/*Font size for list items and links*/
+li, a
+{
+	font-size: 16px;
+	
+}
+
+/*style for navigation bar*/
+header
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 20px 10%;
+}
+
+/*navigation bar class*/
+.nav_links
+{
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*targenting the list items of navigation bar*/
+.nav_links li
+{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+/*targeting the links of the list items of the navigation bar*/
+.nav_links li a
+{
+	transition: all 0.3s;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*changing the color of the links of the navigation bar when hovering your mouse*/
+.nav_links li a:hover
+{
+	color: #0098d9;
+}
+
+/*used for styling the logo in the navigation bar*/
+.logo
+{
+	margin-right: auto;
+}
+
+/*used for styling the image slideshow*/
+.slider
+{
+	width: 100%;
+	height: 80vh;
+	padding: 0 20px;
+}
+
+/*used for styling the image inside the image slideshow*/
+.imag
+{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+/*used for styling the footer*/
+.foot
+{
+	display: flex;
+	background-color: #9ee2ff;
+	color: black;
+}
+
+/*targeting the a tag in the foot class*/
+.foot a
+{
+	color: black;
+}
+
+/*used for styling the first column of the footer*/
+.footone
+{
+	flex: 1;
+	border: 1px solid #fff;
+	padding: 20px ;
+}
+
+/*used for styling the second column of the footer*/
+.foottwo
+{
+	justify-content: flex-end;
+	flex: 1;
+	border: 1px solid #fff;
+	padding: 20px;
+}
+
+/*used for styling the third column of the footer*/
+.footthree
+{
+	flex: 1;
+	border: 1px solid #fff;
+	padding: 20px;
+}
+
+/*targeting the h3 tag in the footthree class*/
+.footthree h3
+{
+	padding-bottom: 5px;
+}
+
+/*creating rows to place the category names and images*/
+.categories_section1, .categories_section2
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*used for styling and placing the category names and icons in boxes*/
+.categories
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #9ee2ff;
+	width: 100%;
+	height: 70px;
+	border: 1px solid #ffffff;
+}
+
+/*used for styling the image of shop by category*/
+.image_category
+{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+/*targeting the img tag of the image_category class*/
+.image_category img
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*used for styling the text of shop by category*/
+.text_category
+{
+	padding-left: 10px;
+}
+
+/*targeting the a tag of text_category class*/
+.text_category a
+{
+	color: black;
+}
+
+/*styling the title shop by category*/
+.shop
+{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif !important;
+	padding: 20px 0;
+}
+
+/*used for placing 3 products in a row*/
+.products_row
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*used for placing products in a column*/
+.products_col
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #d4d4d4;
+	flex-direction: column;
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+/*used for styling the images of the product*/
+.products_img
+{
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+}
+
+/*targeting the img tag of the product_img class*/
+.products_img img
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*used for styling the product price and add to cart, add to wishlist buttons*/
+.products_text
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*used for styling the title of the webpages.*/
+.category_title
+{
+	display: flex;
+	justify-content: center;
+	background-color: #0098d9;
+	padding: 20px;
+	/*margin-bottom: 10px;*/
+	color: white;
+
+}
+
+/*targeting the h1 tag of category_title classvand styling it*/
+.category_title h1
+{
+	font-family: 'Montserrat', sans-serif !important;
+	text-transform: uppercase;
+	font-size: 30px !important;
+}
+
+/*Class used for styling the titles of related products. */
+.category_title_relatedProd
+{
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	padding: 10px;
+	/*margin-bottom: 10px;*/
+	color: white;
+	font-family: 'Montserrat', sans-serif !important;
+	padding: 20px 0;
+	margin-top: 25px;
+}
+

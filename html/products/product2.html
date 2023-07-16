@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="21039918 Rayan Dongol">
+	<meta name="keywords" content="HTML">
+	<link rel="stylesheet" type="text/css" href="../../css/c.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<title>Iphone 13 Pro Max</title>
+	<script src="../../js/javascr.js"></script>
+	<style type="text/css"> /*internal css*/
+		button /*changing the size of the button tag*/
+		{
+			width: 140px;
+			height: 50px;
+			border: 2px solid;
+			padding: 5px;
+		}
+
+		.but /*used for styling the button*/
+		{
+			background-color: #ffc875;
+			border-radius: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		button:hover /*changing color of the button when hovering your mouse over it*/
+		{
+			background-color: #ffb13d;
+			transition: 0.3s;
+		}
+
+		.buy_row /*flex for placing the product image and description*/
+		{
+			display: flex;
+			justify-content: center;
+		}
+
+		.buy_img /*used for styling image of the product*/
+		{
+			flex: 1;
+			width: 400px;
+			height: 400px;
+		}
+
+		.buy_img img /*targeting the img tag of the buy_img class*/
+		{
+			width: 100%;
+			height: 100%;
+		}
+
+		.buy_desc /*used for styling the description of the products*/
+		{
+			flex: 2;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- navigation bar -->
+		<a class="logo" href="../../main.html"><img src="../../images/E-commerce Webpage-logos_transparent.png" alt="logo" width="220px"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../../main.html">Home</a></li>
+				<li><a href="../../html/Product.html">Products</a></li>
+				<li><a href="../../html/Blog.html">Blog</a></li>
+				<li><a href="../../html/Research.html">Research</a></li>
+				<li><a href="../../html/Contact.html">Contact Us</a></li>
+				<li><a href="#">Cart (<span id="update_cart">0</span>)</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<!-- page title -->
+		<div class="category_title">
+			<h1>Iphone 13 Pro Max</h1>
+		</div>
+		<!-- product -->
+		<div class="buy_row">
+			<!-- product img -->
+			<div class="buy_col">
+				<div class="buy_img">
+					<img src="../../images/iphone13 pro max.jpg">
+				</div>
+			</div>
+			<!-- product description -->
+			<div>
+				<div class="buy_desc">
+					<h2>Rs 25000</h2><br>
+					<ul style="display: flex; flex-direction: column; width: 400px; border-top: 2px solid black; border-bottom: 2px solid black;">
+						<h3>Key features</h3><br>
+						<li>Display Type: Dynamic AMOLED 2X, 120Hz, HDR10+, 1500 nits (peak)</li>
+						<li>Display Size: 6.8 inches, 112.1 cm2 (~89.8% screen-to-body ratio)</li>
+						<li>Display Resolution: 1440 x 3200 pixels, 20:9 ratio (~515 ppi density)</li>
+						<li>OS: Android 11, One UI 3.1</li>
+						<li>Internal Memory: 128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM</li>
+						<li>Main Camera: 108 MP, f/1.8, 24mm (wide), 1/1.33", 0.8µm, PDAF, Laser AF, OIS</li>
+						<li>Battery: Li-Ion 5000 mAh, non-removable</li>
+					</ul><br>
+					<button class="but" id="cart" name="cart" onclick="addToCart()">
+						<img src="../../images/shopping-cart.png" width="15px">
+						&nbsp Add to Cart
+					</button>&nbsp
+					<button class="but" id="wish" name="wish" onclick="addToWish()">
+						<img src="../../images/heart.png" width="15px">
+						&nbspAdd to Wishlist
+					</button>
+				</div>
+			</div>
+		</div><br>
+		<!-- related products -->
+		<h2 class="category_title_relatedProd">Related Products</h2>
+		<div class="products_row">
+			<!-- product 1 -->
+			<div class="products_col" style="border: none;">
+				<!-- product 1 imgage -->
+				<div class="products_img">
+					<a href="product1.html"><img src="../../images/s21 ultra.jpeg"></a>
+				</div>
+				<!-- product 1 description -->
+				<div>
+					<a href="../products/product1.html">
+					<p align="center">Samsung Galaxy S21 Ultra</p></a><br>
+					<div class="products_text">
+						<a href="../products/product1.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- product 2 -->
+			<div class="products_col" style="border: none;">
+				<!-- product 2 img-->
+				<div class="products_img">
+					<a href="product3.html"><img src="../../images/oneplus9.png"></a>
+				</div>
+				<!-- product 2 description-->
+				<div>
+					<a href="../products/product3.html">
+					<p align="center">One Plus 9</p></a><br>
+					<div class="products_text">
+						<a href="../products/product3.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- product 3 -->
+			<div class="products_col" style="border: none;">
+				<!-- product 3 image -->
+				<div class="products_img">
+					<a href="product4.html"><img src="../../images/Google-Pixel-6-Pro-in-Kenya.jpeg"></a>
+				</div>
+				<!-- product 3 description -->
+				<div>
+					<a href="../products/product4.html">
+					<p align="center">Google Pixel 6 Pro</p></a><br>
+					<div class="products_text">
+						<a href="../products/product4.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><br>
+	<!-- footer -->
+	<footer>
+			<div class="foot">
+				<div class="footone">
+					<!-- column 1 of footer -->
+					<table>
+						<tr>
+							<h3>Shop</h3>
+						</tr>
+						<tr>
+							<td><a href="../category/phones.html">Phones</a></td>
+						</tr>
+						<tr>
+							<td><a href="../category/laptops.html">Laptops</a></td>
+						</tr>
+						<tr>
+							<td><a href="../category/headphones.html">Headphones</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/computing.html">Computing</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/tv.html">TV</td></a>
+						</tr>
+						<tr>
+							<td><a href="../category/homeappliances.html">Home Appliances</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- column 2 of footer -->
+				<div class="foottwo">
+					<table>
+						<tr>
+							<h3>Support</h3>
+						</tr>
+						<tr>
+							<td><a href="../Contact.html">Contact Us</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Blog.html">Blog</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Research.html">Research</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- column 3 of footer -->
+				<div class="footthree">
+					<h3>Follow us</h3>
+					<a href="https://www.instagram.com/instagram/"><img src="../../images/instagram.png" width="30px"></a>&nbsp
+					<a href="https://www.facebook.com/"><img src="../../images/facebook.png" width="30px"></a>&nbsp
+					<a href="https://twitter.com/Twitter"><img src="../../images/twitter.png" width="30px"></a>&nbsp&nbsp
+					<a href="https://www.tiktok.com/@tiktok"><img src="../../images/tiktok.png" width="30px"></a>
+				</div>
+			</div>
+			<div style="padding: 10px; font-size: 10px;">
+				&copy; Rayan Dongol 21039918 ALL RIGHTS RESERVED
+			</div>
+	</footer>
+</body> <!-- body end -->
+</html>

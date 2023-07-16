@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="21039918 Rayan Dongol">
+	<meta name="keywords" content="HTML">
+	<link rel="stylesheet" type="text/css" href="../../css/c.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<script src="../../js/javascr.js"></script>
+	<title>TV</title>
+	<style type="text/css"> /*internal css*/
+		button /*changing the size of the button tag*/
+		{
+			width: 140px;
+			height: 50px;
+			border: 2px solid;
+			padding: 5px;
+		}
+
+		.but /*used for styling the button*/
+		{
+			background-color: #ffc875;
+			border-radius: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		button:hover /*changing color of the button when hovering your mouse over it*/
+		{
+			background-color: #ffb13d;
+			transition: 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- navigation bar -->
+		<a class="logo" href="../../main.html"><img src="../../images/E-commerce Webpage-logos_transparent.png" alt="logo" width="220px"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../../main.html">Home</a></li>
+				<li><a href="../../html/Product.html">Products</a></li>
+				<li><a href="../../html/Blog.html">Blog</a></li>
+				<li><a href="../../html/Research.html">Research</a></li>
+				<li><a href="../../html/Contact.html">Contact Us</a></li>
+				<li><a href="#">Cart (<span id="update_cart">0</span>)</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<!-- page title -->
+		<div class="category_title">
+			<h1>Television</h1>
+		</div>
+		<div class="products_row">
+			<!-- product 1 -->
+			<div class="products_col">
+				<!-- product 1 img-->
+				<div class="products_img">
+					<a href="../products/product31.html"><img src="../../images/samsung neo.jpeg"></a>
+				</div>
+				<!-- product 1 description-->
+				<div>
+					<a href="../products/product31.html">
+					<p align="center">Samsung Neo QLED TV 55”</p></a><br>
+					<div class="products_text">
+						<a href="../products/product31.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- product 2 -->
+			<div class="products_col">
+				<!-- product 2 img-->
+				<div class="products_img">
+					<a href="../products/product32.html"><img src="../../images/lg uhd tv.jpeg"></a>
+				</div>
+				<!-- product 2 description-->
+				<div>
+					<a href="../products/product32.html">
+					<p align="center">LG UHD TV 55”</p></a><br>
+					<div class="products_text">
+						<a href="../products/product32.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- product 3 -->
+			<div class="products_col">
+				<!-- product 3 img -->
+				<div class="products_img">
+					<a href="../products/product33.html"><img src="../../images/samsung class the frame.jpeg"></a>
+				</div>
+				<!-- product 3 description -->
+				<div>
+					<a href="../products/product33.html">
+					<p align="center">Samsung Class The Frame TV 55”</p></a><br>
+					<div class="products_text">
+						<a href="../products/product33.html"><span style="color: red;">NPR 20,000.00</span><br></a>
+						<div style="display: flex; flex-direction: row;">
+							<button class="but" id="cart" name="cart" onclick="addToCart()">
+								<img src="../../images/shopping-cart.png" width="15px">
+								&nbsp Add to Cart
+							</button>&nbsp
+							<button class="but" id="wish" name="wish" onclick="addToWish()">
+								<img src="../../images/heart.png" width="15px">
+								&nbspAdd to Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer>
+			<div class="foot">
+				<!-- Column 1 of footer -->
+				<div class="footone">
+					<table>
+						<tr>
+							<h3>Shop</h3>
+						</tr>
+						<tr>
+							<td><a href="phones.html">Phones</a></td>
+						</tr>
+						<tr>
+							<td><a href="laptops.html">Laptops</a></td>
+						</tr>
+						<tr>
+							<td><a href="headphones.html">Headphones</td></a>
+						</tr>
+						<tr>
+							<td><a href="computing.html">Computing</td></a>
+						</tr>
+						<tr>
+							<td><a href="tv.html">TV</td></a>
+						</tr>
+						<tr>
+							<td><a href="homeappliances.html">Home Appliances</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- Column 2 of footer -->
+				<div class="foottwo">
+					<table>
+						<tr>
+							<h3>Support</h3>
+						</tr>
+						<tr>
+							<td><a href="../Contact.html">Contact Us</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Blog.html">Blog</td></a>
+						</tr>
+						<tr>
+							<td><a href="../Research.html">Research</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- Column 3 of footer -->
+				<div class="footthree">
+					<h3>Follow us</h3>
+					<a href="https://www.instagram.com/instagram/"><img src="../../images/instagram.png" width="30px"></a>&nbsp
+					<a href="https://www.facebook.com/"><img src="../../images/facebook.png" width="30px"></a>&nbsp
+					<a href="https://twitter.com/Twitter"><img src="../../images/twitter.png" width="30px"></a>&nbsp&nbsp
+					<a href="https://www.tiktok.com/@tiktok"><img src="../../images/tiktok.png" width="30px"></a>
+				</div>
+			</div>
+			<div style="padding: 10px; font-size: 10px;">
+				&copy; Rayan Dongol 21039918 ALL RIGHTS RESERVED
+			</div>
+	</footer>
+</body> <!-- body end -->
+</html>

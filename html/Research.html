@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="21039918 Rayan Dongol">
+	<meta name="keywords" content="HTML">
+	<link rel="stylesheet" type="text/css" href="../css/c.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<title>Research</title>
+	<script src="../js/javascr.js"></script>
+	<style type="text/css"> /*internal css*/
+		.research_main /*used for placing all the contents of research in a row*/
+		{
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			width: 100%;
+		}
+
+		.research_col /*creating flex*/
+		{
+			display: flex;
+		}
+
+		.research_desc /*syling the description of research*/
+		{
+			display: flex;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid black;
+			/*justify-content: center;*/
+		}
+
+		.research_img /*styling the image of research*/
+		{
+			display: flex;
+			flex-direction: row;
+			width: 50%;
+			height: 50%;
+		}
+
+		.research_img img /*targeting the img tag of research_img class*/
+		{
+			width: 100%;
+			height: 100%;
+			margin: 10px;
+			border: 2px	solid;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- navigation bar -->
+		<a class="logo" href="../main.html"><img src="../images/E-commerce Webpage-logos_transparent.png" alt="logo" width="220px"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../main.html">Home</a></li>
+				<li><a href="../html/Product.html">Products</a></li>
+				<li><a href="../html/Blog.html">Blog</a></li>
+				<li><a href="../html/Research.html">Research</a></li>
+				<li><a href="../html/Contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<!-- title of page -->
+		<div class="category_title" style="margin-bottom: 10px;">
+			<h1>Research</h1>
+		</div>
+		<div class=".research_main">
+			<!-- research title -->
+			<h2 style="margin-left: 10px;">1: Footer</h2>
+			<!-- image related with research -->
+			<div class="research_col">
+				<div class="research_img">
+					<img src="../images/samsung footer.png">
+					<img src="../images/my_footer.png">
+				</div>
+			</div>
+			<!-- research's description -->
+			<div class="research_desc">
+				<p>The footer that i designed was inspired from <a href="https://www.samsung.com/us/" style="font-style: italic;">Samsung's website</a>. I created it with the help of flex and table tags.</p>
+			</div>
+		</div>
+		<div class=".research_main">
+			<!-- research title -->
+			<h2 style="margin-left: 10px;">2: Shop By Category</h2>
+			<!-- image  -->
+			<div class="research_col">
+				<div class="research_img">
+					<img src="../images/shein category.png">
+					<img src="../images/my_category.png">
+				</div>
+			</div>
+			<!-- research description -->
+			<div class="research_desc">
+				<p>Shop by Category that I created was inspired from the one in <a href="https://eur.shein.com/" style="font-style: italic;">Shein's website</a>. I created it by utilizing the properties CSS and Flex.</p>
+			</div>
+		</div>
+		<div class=".research_main">
+			<!-- research title -->
+			<h2 style="margin-left: 10px;">3: Border on Items</h2>
+			<!-- image -->
+			<div class="research_col">
+				<div class="research_img">
+					<img src="../images/t mobile items.png">
+					<img src="../images/my_items.png">
+				</div>
+			</div>
+			<!-- research description -->
+			<div class="research_desc">
+				<p>The design for the placement of different items in three columns and multiple rows with grey borders was inspired form the one in <a href="https://eur.shein.com/" style="font-style: italic;">T-Mobile's website</a>. I created it by utilizing the properties CSS and Flex.</p>
+			</div>
+		</div>
+		<div class=".research_main">
+			<!-- research title -->
+			<h2 style="margin-left: 10px;">4: Blog Layout</h2>
+			<div class="research_col">
+				<!-- image -->
+				<div class="research_img">
+					<img src="../images/Engadget Blog Layout.png">
+					<img src="../images/my_blog.png">
+				</div>
+			</div>
+			<!-- research description -->
+			<div class="research_desc">
+				<p>The design for my Blog page was heavily inspired form the one in <a href="https://www.engadget.com/apple-tv-plus-severance-trailer-213716350.html" style="font-style: italic;">Engadget's website</a>.</p>
+			</div>
+		</div>
+		<div class=".research_main">
+			<!-- research title -->
+			<h2 style="margin-left: 10px;">5: Item Description</h2>
+			<div class="research_col">
+				<!-- image -->
+				<div class="research_img">
+					<img src="../images/LG Item desc.png">
+					<img src="../images/my_itemdesc.png">
+				</div>
+			</div>
+			<!-- research description -->
+			<div class="research_desc">
+				<p>The design for my Item's description layout was heavily inspired form the one in <a href="https://www.lg.com/us/air-conditioners/lg-lw1517ivsm" style="font-style: italic;">LG's website</a>.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer>
+			<div class="foot">
+				<!-- Column 1 of Footer -->
+				<div class="footone">
+					<table>
+						<tr>
+							<h3>Shop</h3>
+						</tr>
+						<tr>
+							<td><a href="category/phones.html">Phones</a></td>
+						</tr>
+						<tr>
+							<td><a href="category/laptops.html">Laptops</a></td>
+						</tr>
+						<tr>
+							<td><a href="category/headphones.html">Headphones</td></a>
+						</tr>
+						<tr>
+							<td><a href="category/computing.html">Computing</td></a>
+						</tr>
+						<tr>
+							<td><a href="category/tv.html">TV</td></a>
+						</tr>
+						<tr>
+							<td><a href="category/homeappliances.html">Home Appliances</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- Column 2 of Footer -->
+				<div class="foottwo">
+					<table>
+						<tr>
+							<h3>Support</h3>
+						</tr>
+						<tr>
+							<td><a href="Contact.html">Contact Us</td></a>
+						</tr>
+						<tr>
+							<td><a href="Blog.html">Blog</td></a>
+						</tr>
+						<tr>
+							<td><a href="Research.html">Research</td></a>
+						</tr>
+					</table>
+				</div>
+				<!-- Column 2 of Footer -->
+				<div class="footthree">
+					<h3>Follow us</h3>
+					<a href="https://www.instagram.com/instagram/"><img src="../images/instagram.png" width="30px"></a>&nbsp
+					<a href="https://www.facebook.com/"><img src="../images/facebook.png" width="30px"></a>&nbsp
+					<a href="https://twitter.com/Twitter"><img src="../images/twitter.png" width="30px"></a>&nbsp&nbsp
+					<a href="https://www.tiktok.com/@tiktok"><img src="../images/tiktok.png" width="30px"></a>
+				</div>
+			</div>
+			<!-- copyright -->
+			<div style="padding: 10px; font-size: 10px;">
+				&copy; Rayan Dongol 21039918 ALL RIGHTS RESERVED
+			</div>
+	</footer> <!-- footer end -->
+</body> <!-- body end -->
+</html>
